@@ -4,9 +4,6 @@ const bot = new Telegraf(TOKEN);
 
 const web_link = "https://bastionbattle.itch.io/bastion-td";
 
-// bot.use(async(ctx, next)=> {
-//   console.log("first middleware");
-// })
 function getRandomInt(min, max){
   min = Math.ceil(min);
   max = Math.floor(max);
@@ -26,7 +23,4 @@ bot.start((ctx) =>
     },
   })
 );
-// bot.use(async(ctx, next) => {
-//   await ctx.reply(JSON.stringify(ctx.update, null,2))
-// })
 bot.launch();
